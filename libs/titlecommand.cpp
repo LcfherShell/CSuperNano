@@ -1,16 +1,19 @@
 #include <iostream>
 #include <windows.h> // Untuk fungsi SetConsoleTitle dan GetConsoleTitle
+#include <string>    // Untuk std::string
 
-void getConsoleTitle() {
+
+std::string getConsoleTitle() {
     // Menentukan buffer untuk menyimpan judul
     const int bufferSize = 256;
     char buffer[bufferSize];
 
     // Mendapatkan judul jendela CMD
     if (GetConsoleTitleA(buffer, bufferSize)) {
-        std::cout << "Judul jendela CMD saat ini: " << buffer << std::endl;
+        return std::string(buffer);
     } else {
-        std::cerr << "Gagal mendapatkan judul jendela CMD." << std::endl;
+        // Jika gagal, kembalikan pesan kesalahan
+        return "Gagal mendapatkan judul jendela CMD.";
     }
 }
 
