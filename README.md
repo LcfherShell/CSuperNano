@@ -4,7 +4,7 @@ Here is the documentation for the `CSuperNano` script, a console-based editor wr
 
 ---
 # CSuperNano
-CSuperNano is a console-based text editor that allows users to open, edit, save and delete files directly from a text-based interface. It also provides file editing, directory navigation and file search features.
+CSuperNano is a console-based text editor that allows users to open, edit, save and delete files directly from a text-based interface. It also provides file editing, and directory navigation.
 
 ### Key Features:
 - **Directory Navigation**: Displays the contents of directories and allows navigation between directories.
